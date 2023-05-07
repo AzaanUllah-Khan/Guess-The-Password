@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Password +</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="smallTime">
+            <p>00:00</p>
+        </div>
+        <div class="click" onclick="up()" id="hidden">
+            Click To Open
+        </div>
+        <div id="time">
+            <h1>00:00</h1>
+        </div>
+        <div class="main" id="shown">
+            <div class="heading">
+                <h1>Guess The Password</h1>
+            </div>
+            <div class="input">
+                <input type="password" readonly id="inp">
+                <p onclick="check()">OK</p>
+            </div>
+            <div class="numbers">
+                <div class="row">
+                    <button onclick="one()">1</button>
+                    <button onclick="two()">2</button>
+                    <button onclick="three()">3</button>
+                </div>
+                <div class="row">
+                    <button onclick="four()">4</button>
+                    <button onclick="five()">5</button>
+                    <button onclick="six()">6</button>
+                </div>
+                <div class="row">
+                    <button onclick="seven()">7</button>
+                    <button onclick="eight()">8</button>
+                    <button onclick="nine()">9</button>
+                </div>
+                <div class="row">
+                    <button onclick="zero()">0</button>
+                </div>
+            </div>
+            <p class="azaan" onclick="down()">o</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

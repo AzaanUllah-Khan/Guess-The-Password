@@ -1,0 +1,181 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.container {
+    position: relative;
+    margin-top: 20px;
+    width: 40%;
+    height: 90vh;
+    padding: 10px;
+    border-radius: 7px;
+    background: url("https://e0.pxfuel.com/wallpapers/341/252/desktop-wallpaper-iphone-dark-mode-dark-theme-iphone.jpg");
+    border: 2px solid rgb(43, 43, 43);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+.click{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+#time{
+    text-align: center;
+    font-size: 90px;
+    margin-top: 30px;
+    color: white;
+    
+}
+.main{
+    position: absolute;
+    bottom: -105%;
+    transition: all 1s ease;
+    width: 100%;
+    left: 0;
+}
+.heading {
+    width: 100%;
+}
+
+.heading h1 {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.input input{
+    width: 50%;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin-right: 10px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    backdrop-filter: blur(1px) brightness(80%);
+}
+.input p{
+    cursor: pointer;
+    padding: 7px;
+}
+.input p:hover{
+    background-color: rgba(100, 100, 100, 0.7);
+}
+.numbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+}
+.row{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.row:nth-child(4){
+    justify-content: center;
+}
+.row button{
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 25px 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.row button::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -105%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: skew(-30deg);
+    transition: all 1s ease;
+}
+.row button:hover::before{
+    transform: skew(0);
+    right: 0;
+}
+.azaan{
+    color: white;
+    filter: opacity(0.5);
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.azaan::before{
+    content: "Azaan's Iphone";
+    position: absolute;
+    bottom: 0;
+    left: -105%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: skew(-30deg);
+    transition: all 1s ease;
+}
+.azaan:hover{
+    color: black;
+}
+.azaan:hover::before{
+    transform: skew(0);
+    left: 0;
+    color: white;
+}
+#smallTime{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 12px;color: white;
+}
+@media screen and (max-width: 1000px) {
+    .container{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container{
+        width: 90%;
+    }
+}
